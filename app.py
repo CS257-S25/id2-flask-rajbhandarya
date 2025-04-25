@@ -22,14 +22,13 @@ def get_random(number):
 def page_not_found(e):
     ''' Returns a 404 error message. '''
     print(e)
-    return f"Sorry, wrong format. Type /number after the current " +\
-          "URL where number is the amount of random recipes you want."
+    return "Sorry, wrong format. Type /number after the current URL."
 
 @app.errorhandler(500)
 def python_bug(e):
     ''' Returns a 500 error message. '''
     print(e)
-    return f"Eek, a bug!"
+    return "Eek, a bug!"
 
 
 if __name__ == '__main__':
