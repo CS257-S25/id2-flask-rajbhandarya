@@ -16,7 +16,7 @@ class test_route_404(unittest.TestCase):
     def test_route_404(self):
         self.app = app.test_client()
         response = self.app.get('/0/1/2', follow_redirects=True)
-        self.assertEqual(b'Sorry, wrong format. Type /number after the current URL where number is the amount of random recipes you want', response.data)
+        self.assertEqual(b'Sorry, wrong format. Type /number after the current URL where number is the amount of random recipes you want.', response.data)
 
 class test_route_500(unittest.TestCase):
     def test_route_500(self):
@@ -26,3 +26,4 @@ class test_route_500(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
