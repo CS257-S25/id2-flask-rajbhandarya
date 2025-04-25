@@ -1,7 +1,3 @@
-import os
-import sys
-import unittest
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app import *
 import unittest
 
@@ -30,4 +26,3 @@ class test_route_500(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
